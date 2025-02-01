@@ -64,28 +64,40 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Time in your location</h1>
       <div>
-        <img src={`${icon}`} alt='imagen del tiempo' />
-      </div>
-      <span data-editable="text" data-label="City to search" id="code_1">
-        <h2>
-          {cityValue}
-        </h2>
-      </span>
+        <h1>Time in your location</h1>
+        <div>
+          <img src={`${icon}`} alt='imagen del tiempo' />
+        </div>
+        <span data-editable="text" data-label="City to search" id="code_1">
+          <h2>
+            {cityValue}
+          </h2>
+        </span>
 
-      <div>
-        <h2>Temperature</h2>
-        <h3>{celsius}°C - {fahrenheit}°F</h3>
+        <div>
+          <h2>Temperature</h2>
+          <h3>{celsius}°C - {fahrenheit}°F</h3>
+        </div>
+        <div>
+          <h3>
+            Salida del sol: {sunrise}
+          </h3>
+          <h3>
+            Puesta del sol: {sunset}
+          </h3>
+        </div>
       </div>
-      <div>
-        <h3>
-          Salida del sol: {sunrise}
-        </h3>
-        <h3>
-          Puesta del sol: {sunset}
-        </h3>
-      </div>
+      <footer className="App-footer">
+        <p>
+          Created by <a href="https://github.com/ruugii">Roger Barrero</a>
+        </p>
+        <p>
+          <a href="https://github.com/ruugii/Time-in-your-location">
+            Github repository <img src="/github-logo.svg" alt="github logo" width="20px" />
+          </a>
+        </p>
+      </footer>
     </div>
   );
 }
